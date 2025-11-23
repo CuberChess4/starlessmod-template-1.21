@@ -1,8 +1,10 @@
 package com.starless;
 
+import com.starless.datagen.ModModelsProvider;
 import com.starless.item.ModFoodComponent;
 import com.starless.item.ModItemGroups;
 import com.starless.item.ModItems;
+import com.starless.sound.ModSoundEvents;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,6 +26,7 @@ public class StarlessMod implements ModInitializer {
 
         ModItems.registerModItems();
         ModItemGroups.registerModItemGroups();
+        ModSoundEvents.registerModSoundEvents();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

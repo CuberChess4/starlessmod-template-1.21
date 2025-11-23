@@ -1,11 +1,33 @@
 package com.starless;
 
+import com.starless.datagen.*;
+import com.starless.sound.ModJukeboxSongs;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class StarlessModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+        FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-	}
+        pack.addProvider(ModModelsProvider::new);
+        // pack.addProvider(ModItemTagsProvider::new);
+
+        pack.addProvider(ModZHCNLanProvider::new);
+
+        pack.addProvider(ModENUSLanProvider::new);
+
+        pack.addProvider(ModRecipesProvider::new);
+
+        pack.addProvider(ModLootTableProvider::new);
+
+    }
+
+    @Override
+    public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.JUKEBOX_SONG, ModJukeboxSongs::bootstrap);
+        DataGeneratorEntrypoint.super.buildRegistry(registryBuilder);
+    }
 }

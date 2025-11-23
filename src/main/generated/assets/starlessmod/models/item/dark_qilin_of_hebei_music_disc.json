@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/template_music_disc",
+  "textures": {
+    "layer0": "starlessmod:item/dark_qilin_of_hebei_music_disc"
+  }
+}
