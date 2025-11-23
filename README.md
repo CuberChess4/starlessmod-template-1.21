@@ -1,0 +1,6 @@
+[README.md](https://github.com/user-attachments/files/23686575/README.md)
+# Starless简介
+
+​	这是一个MC模组制作初学者的作品。我当然不指望你喜欢它，但是如果你认可我，就请点亮一个免费的Star。感谢你的支持。
+
+​	截至2025.11.22上午，这个模组已经添加了绿宝石苹果和紫水晶苹果。
