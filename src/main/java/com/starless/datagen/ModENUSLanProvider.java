@@ -20,6 +20,9 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.DARK_QILIN_OF_HEBEI_MUSIC_DISC, "DARK QILIN OF HEBEI");
         translationBuilder.add("itemGroup.starless_group", "Starless Group");
 
+        translationBuilder.add(ModItems.TOMATO, "Tomato");
+        translationBuilder.add(ModItems.TOMATO_SEEDS, "Tomato Seeds");
+
         translationBuilder.add("jukebox_song.starlessmod.dark_qilin_of_hebei", "Inside the Cable Temple" );
     }
 }

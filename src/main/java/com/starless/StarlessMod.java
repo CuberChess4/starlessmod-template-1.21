@@ -1,9 +1,12 @@
 package com.starless;
 
+import com.starless.block.ModBlocks;
+import com.starless.block.custom.TomatoCropBlock;
 import com.starless.datagen.ModModelsProvider;
 import com.starless.item.ModFoodComponent;
 import com.starless.item.ModItemGroups;
 import com.starless.item.ModItems;
+import com.starless.mixin.RenderLayersMixin;
 import com.starless.sound.ModSoundEvents;
 import net.fabricmc.api.ModInitializer;
 
@@ -25,6 +28,7 @@ public class StarlessMod implements ModInitializer {
 		// Proceed with mild caution.
 
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
         ModItemGroups.registerModItemGroups();
         ModSoundEvents.registerModSoundEvents();
 		LOGGER.info("Hello Fabric world!");

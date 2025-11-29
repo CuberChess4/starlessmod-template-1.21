@@ -17,4 +17,8 @@ public class ModFoodComponent {
             .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 12000, 0), 1.0F)
             .alwaysEdible()
             .build();
+    public static final FoodComponent TOMATO = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(1.2F)
+            .build();
 }

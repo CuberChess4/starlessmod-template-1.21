@@ -20,6 +20,9 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.DARK_QILIN_OF_HEBEI_MUSIC_DISC, "河北墨麒麟唱片");
         translationBuilder.add("itemGroup.starless_group", "熵星");
 
+        translationBuilder.add(ModItems.TOMATO, "番茄");
+        translationBuilder.add(ModItems.TOMATO_SEEDS, "番茄种子");
+
         translationBuilder.add("jukebox_song.starlessmod.dark_qilin_of_hebei", "河北墨麒麟" );
     }
 }

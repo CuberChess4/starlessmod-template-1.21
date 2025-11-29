@@ -10,8 +10,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
-    public ModItemTagsProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture, @Nullable BlockTagProvider blockTagProvider) {
-        super(output, completableFuture, blockTagProvider);
+    public ModItemTagsProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registerFuture) {
+        super(output, registerFuture);
     }
 
     @Override

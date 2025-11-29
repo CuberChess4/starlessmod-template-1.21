@@ -32,6 +32,8 @@ public class ModItemGroups {
                     entries.add(ModItems.EMERALD_APPLE);
                     entries.add(ModItems.AMETHYST_APPLE);
                     entries.add(ModItems.DARK_QILIN_OF_HEBEI_MUSIC_DISC);
+                    entries.add(ModItems.TOMATO);
+                    entries.add(ModItems.TOMATO_SEEDS);
                 }).build());
     public static void registerModItemGroups() {
         StarlessMod.LOGGER.info("Registering Item Groups");

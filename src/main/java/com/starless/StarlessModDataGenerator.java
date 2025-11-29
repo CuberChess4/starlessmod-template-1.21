@@ -13,7 +13,8 @@ public class StarlessModDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
         pack.addProvider(ModModelsProvider::new);
-        // pack.addProvider(ModItemTagsProvider::new);
+
+        pack.addProvider(ModItemTagsProvider::new);
 
         pack.addProvider(ModZHCNLanProvider::new);
 
