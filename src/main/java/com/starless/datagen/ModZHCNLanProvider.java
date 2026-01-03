@@ -1,11 +1,13 @@
 package com.starless.datagen;
 
+import com.starless.block.ModBlocks;
 import com.starless.item.ModItemGroups;
 import com.starless.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 
+import java.nio.file.Path;
 import java.util.concurrent.CompletableFuture;
 
 public class ModZHCNLanProvider extends FabricLanguageProvider {
@@ -22,6 +24,7 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.TOMATO, "番茄");
         translationBuilder.add(ModItems.TOMATO_SEEDS, "番茄种子");
+        translationBuilder.add(ModBlocks.ALUMINIUM_ORE, "铝矿");
 
         translationBuilder.add("jukebox_song.starlessmod.dark_qilin_of_hebei", "河北墨麒麟" );
     }

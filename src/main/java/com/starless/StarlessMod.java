@@ -8,6 +8,9 @@ import com.starless.item.ModItemGroups;
 import com.starless.item.ModItems;
 import com.starless.mixin.RenderLayersMixin;
 import com.starless.sound.ModSoundEvents;
+import com.starless.tags.ModBlockTags;
+import com.starless.tags.ModItemTags;
+import com.starless.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -31,6 +34,9 @@ public class StarlessMod implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModItemGroups.registerModItemGroups();
         ModSoundEvents.registerModSoundEvents();
+        ModWorldGeneration.registerWorldGenerations();
+        ModBlockTags.registerModBlockTags();
+        ModItemTags.registerModItemTags();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

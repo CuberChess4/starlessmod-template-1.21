@@ -39,10 +39,11 @@ public class ModItems {
         fabricItemGroupEntries.add(DARK_QILIN_OF_HEBEI_MUSIC_DISC);
         fabricItemGroupEntries.add(TOMATO);
         fabricItemGroupEntries.add(TOMATO_SEEDS);
+        fabricItemGroupEntries.add(ModBlocks.ALUMINIUM_ORE);
     }
 
     public static void registerModItems() {
-        // ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemToIG);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemToIG);
         StarlessMod.LOGGER.info("Registering Items");
     }
 }

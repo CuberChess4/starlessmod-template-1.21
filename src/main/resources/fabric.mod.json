@@ -3,7 +3,7 @@
 	"id": "starlessmod",
 	"version": "${version}",
 	"name": "StarlessMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "这是一个MC Fabric模组开发的初学者的作品。",
 	"authors": [
 		"熵星DarDraw07"
 	],

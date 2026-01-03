@@ -1,5 +1,6 @@
 package com.starless.datagen;
 
+import com.starless.block.ModBlocks;
 import com.starless.item.ModItemGroups;
 import com.starless.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -22,6 +23,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.TOMATO, "Tomato");
         translationBuilder.add(ModItems.TOMATO_SEEDS, "Tomato Seeds");
+        translationBuilder.add(ModBlocks.ALUMINIUM_ORE, "Aluminium Ore");
 
         translationBuilder.add("jukebox_song.starlessmod.dark_qilin_of_hebei", "Inside the Cable Temple" );
     }

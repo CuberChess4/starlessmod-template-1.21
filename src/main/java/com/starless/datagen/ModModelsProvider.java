@@ -18,7 +18,8 @@ public class ModModelsProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP,Properties.AGE_3);
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP,Properties.AGE_3, 0, 1, 2, 3);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALUMINIUM_ORE);
     }
 
     @Override

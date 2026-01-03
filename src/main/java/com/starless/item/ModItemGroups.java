@@ -1,6 +1,7 @@
 package com.starless.item;
 
 import com.starless.StarlessMod;
+import com.starless.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -34,6 +35,7 @@ public class ModItemGroups {
                     entries.add(ModItems.DARK_QILIN_OF_HEBEI_MUSIC_DISC);
                     entries.add(ModItems.TOMATO);
                     entries.add(ModItems.TOMATO_SEEDS);
+                    entries.add(ModBlocks.ALUMINIUM_ORE);
                 }).build());
     public static void registerModItemGroups() {
         StarlessMod.LOGGER.info("Registering Item Groups");

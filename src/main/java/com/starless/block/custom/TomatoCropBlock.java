@@ -30,7 +30,7 @@ public class TomatoCropBlock extends CropBlock {
     }
 
     @Override
-    public IntProperty getAgeProperty() {
+    protected IntProperty getAgeProperty() {
         return AGE;
     }
 
